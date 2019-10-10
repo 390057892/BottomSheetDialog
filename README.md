@@ -1,12 +1,10 @@
 # BottomSheetDialog
 仿IOS底部弹框
-这是一个底部弹出框的库。支持添加头部，修改字体颜色，链式调用。使用方法也非常简单。
+🚀这是一个底部弹出框的库。支持添加头部，修改字体颜色，链式调用。使用方法也非常简单。
 ### 效果图，如下：
 ![正常样式](https://github.com/390057892/BottomSheetDialog/blob/master/yanshi.jpg)
 ![增加标题与颜色](https://github.com/390057892/BottomSheetDialog/blob/master/yanshi2.jpg)
-### Step 1. Add the JitPack repository to your build file
-
-Add it in your root build.gradle at the end of repositories:
+### Step 1. 在项目的Build.Gradle中添加JitPack仓库
 ```java
 	allprojects {
 		repositories {
@@ -15,7 +13,7 @@ Add it in your root build.gradle at the end of repositories:
 		}
 	}
   ```
-### Step 2. Add the dependency
+### Step 2. 在需要的模块中添加依赖
 ```java
 	dependencies {
 	        implementation 'com.github.390057892:BottomSheetDialog:v1.0.0'
