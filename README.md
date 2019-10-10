@@ -2,8 +2,8 @@
 仿IOS底部弹框
 这是一个底部弹出框的库。支持添加头部，修改字体颜色，链式调用。使用方法也非常简单。
 ### 效果图，如下：
-![image][https://github.com/390057892/BottomSheetDialog/blob/master/yanshi.jpg]
-![image][https://github.com/390057892/BottomSheetDialog/blob/master/yanshi2.jpg]
+![正常样式](https://github.com/390057892/BottomSheetDialog/blob/master/yanshi.jpg)
+![增加标题与颜色](https://github.com/390057892/BottomSheetDialog/blob/master/yanshi2.jpg)
 ### Step 1. Add the JitPack repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
