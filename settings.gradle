@@ -1,0 +1,2 @@
+include ':app', ':bottomdialog'
+rootProject.name='My Application'

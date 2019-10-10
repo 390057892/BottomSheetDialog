@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="dialog_select_camera">拍照</string>
+    <string name="dialog_select_gallery">从相册中选</string>
+</resources>
