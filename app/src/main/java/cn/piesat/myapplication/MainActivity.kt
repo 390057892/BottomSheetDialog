@@ -1,26 +1,33 @@
 package cn.piesat.myapplication
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import cn.piesat.bottomdialog.ActionSheetDialog
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        mBtnDialog.setOnClickListener {
+            showDialog()
+        }
+    }
 
-        val camera = resources.getString(R.string.dialog_select_camera)
-        val gallery = resources.getString(R.string.dialog_select_gallery)
-        ActionSheetDialog(this)
-            .builder()
-            .setCancelable(true)
-            .setCanceledOnTouchOutside(true)
-            .addSheetItem(camera, ActionSheetDialog.SheetItemColor.Normal) {
-                //                toCamera(this)
+
+    private fun showDialog() {
+        val dialog = ActionSheetDialog(this).builder()
+        dialog.setCancelable(true).setCanceledOnTouchOutside(true)
+            .setTitle("多媒体选择标题")
+            .addSheetItem("拍照", ActionSheetDialog.SheetItemColor.Normal) {
+
             }
-            .addSheetItem(gallery, ActionSheetDialog.SheetItemColor.Normal) {
-                //                toGallery(this)
+            .addSheetItem("相册", ActionSheetDialog.SheetItemColor.Blue) {
+
+            }
+            .addSheetItem("录像",ActionSheetDialog.SheetItemColor.Red){
+
             }
             .show()
     }
