@@ -1,6 +1,6 @@
 # BottomSheetDialog
 仿IOS底部弹框
-🚀这是一个底部弹出框的库。支持添加头部，修改字体颜色，链式调用。使用方法也非常简单。
+🚀这是一个底部弹出框的库。可用作图片、性别等选择，支持添加头部，修改字体颜色，链式调用。使用方法也非常简单。
 ### 效果图，如下：
 ![正常样式](https://github.com/390057892/BottomSheetDialog/blob/master/yanshi.jpg)
 ![增加标题与颜色](https://github.com/390057892/BottomSheetDialog/blob/master/yanshi2.jpg)
@@ -38,5 +38,3 @@
                 }).show();
     }  
 ```
-
-Add it in your root build.gradle at the end of repositories:
